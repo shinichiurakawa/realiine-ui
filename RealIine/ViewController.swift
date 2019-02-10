@@ -235,7 +235,7 @@ class ViewController: UIViewController, UITableViewDataSource, UINavigationContr
         // 画像を取得
         
         
-        let image_url = "https://s3-ap-northeast-1.amazonaws.com/hd15-01-dev/dev/selfy-\(searchResultList[indexPath.row].id).jpg"
+        let image_url = "your-s3-uri-\(searchResultList[indexPath.row].id).jpg"
         print(image_url)
         let url = URL(string: image_url)
         let session = URLSession(configuration: .default)
